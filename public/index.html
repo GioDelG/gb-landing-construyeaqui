@@ -282,16 +282,12 @@
             box-shadow: var(--shadow-soft);
         }
 
+        /* ACTUALIZADO: hero-image ahora es <img> */
         .hero-image {
             width: 100%;
             height: 500px;
             object-fit: cover;
-            background: linear-gradient(135deg, #e8e4dc 0%, #d4cfc4 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            color: var(--color-text-light);
+            display: block;
         }
 
         .floating-card {
@@ -739,9 +735,14 @@
                 </div>
                 <div class="hero-visual">
                     <div class="hero-image-container">
-                        <div class="hero-image">
-                            [Foto de proyecto terminado]
-                        </div>
+                        <!-- ACTUALIZADO: imagen real desde /public/assets -->
+                        <img
+                            class="hero-image"
+                            src="assets/IMG_0436.jpg"
+                            alt="Proyecto terminado de construcción en Santiago"
+                            loading="eager"
+                            decoding="async"
+                        />
                     </div>
                     <div class="floating-card card-1">
                         <div class="floating-card-title">+10 años</div>
